@@ -9,7 +9,7 @@ def sellACopy(copies):
   profit += (price * copies)
 
 numberOfCopies -= 1
-profit += price
+profit += 9.99
 
 print("We have %d copies of doom" % numberOfCopies)
 print("Our profit is £%r" % profit)
