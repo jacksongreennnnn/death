@@ -8,12 +8,19 @@ def sellACopy(copies):
   numberOfCopies -= copies
   profit += (price * copies)
 
+def checkCopies():
+  if numberOfCopies <= 0:
+    print("NOOOOOOOOOOOOOOOOOO")
+  else:
+    print("We have %d copies of doom" % numberOfCopies)
+    print("Our profit is £%r" % profit) 
+  
 numberOfCopies -= 1
 profit += price
 
-print("We have %d copies of doom" % numberOfCopies)
-print("Our profit is £%r" % profit)
+checkCopies()
 
-sellACopy(3)
-print("We have %d copies of doom" % numberOfCopies)
-print("Our profit is £%r" % profit)
+for i in range(0, 19):
+  sellACopy(1)
+
+checkCopies()
