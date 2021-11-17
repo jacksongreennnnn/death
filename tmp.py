@@ -1,3 +1,4 @@
+"""
 a = 5
 b = 3
 
@@ -8,3 +9,7 @@ def add():
 
 add()
 print(a, b)
+"""
+
+dict = {"wood": "metal", "plastic": "beans"}
+print(dict["plastic"])
